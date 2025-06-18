@@ -11,18 +11,18 @@ class FoglalasiRendszer:
 
     def _elore_betoltott_adatok(self):
         j1 = BelfoldiJarat("B101", "Budapest", 15000)
-        j2 = NemzetkoziJarat("N201", "London", 45000)
-        j3 = NemzetkoziJarat("N202", "Berlin", 40000)
+        j2 = NemzetkoziJarat("N201", "London", 50000)
+        j3 = NemzetkoziJarat("N202", "Berlin", 60000)
         self.legitarsasag.jarat_hozzaad(j1)
         self.legitarsasag.jarat_hozzaad(j2)
         self.legitarsasag.jarat_hozzaad(j3)
 
-        self.foglalasok.append(JegyFoglalas("Kiss Anna", j1, "2025-06-20"))
-        self.foglalasok.append(JegyFoglalas("Nagy Béla", j2, "2025-06-22"))
-        self.foglalasok.append(JegyFoglalas("Tóth Zsuzsa", j3, "2025-07-01"))
-        self.foglalasok.append(JegyFoglalas("Varga Péter", j1, "2025-06-25"))
-        self.foglalasok.append(JegyFoglalas("Szabó Mária", j2, "2025-06-28"))
-        self.foglalasok.append(JegyFoglalas("Farkas Imre", j3, "2025-07-05"))
+        self.foglalasok.append(JegyFoglalas("Kiss Ádám", j1, "2025-08-20"))
+        self.foglalasok.append(JegyFoglalas("Nagy Bernadet", j2, "2025-09-22"))
+        self.foglalasok.append(JegyFoglalas("Tóth Zsombor", j3, "2025-07-01"))
+        self.foglalasok.append(JegyFoglalas("Varga Dóra", j1, "2025-10-20"))
+        self.foglalasok.append(JegyFoglalas("Szabó Magdolna", j2, "2025-08-28"))
+        self.foglalasok.append(JegyFoglalas("Takács Imre", j3, "2025-07-05"))
 
     def jegy_foglalasa(self, utas_nev, jaratszam, datum):
         jarat = self.legitarsasag.jarat_keres(jaratszam)
